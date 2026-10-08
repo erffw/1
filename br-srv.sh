@@ -48,7 +48,7 @@ echo "- Баннер создан"
 echo "- Скачиваем файл инвентаря"
 apt-get update && apt-get install -y ansible sshpass 
 cd /etc/ansible
-wget raw.githubusercontent.com/19zammik86-source/DEMO/refs/heads/main/inventory.yml
+wget raw.githubusercontent.com/erffw/1/main/inventory.yml
 
 ansible -m ping all
 
