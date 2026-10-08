@@ -1,2 +1,6 @@
-# 1
-demo exam script
+isp -> proxy,
+hq-rtr ->
+br-rtr ->
+hq-srv -> samba, web
+br-srv -> docker,
+hq-cli ->
