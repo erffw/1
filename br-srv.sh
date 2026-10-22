@@ -49,6 +49,11 @@ echo "- Скачиваем файл инвентаря"
 apt-get update && apt-get install -y ansible sshpass 
 cd /etc/ansible
 wget raw.githubusercontent.com/erffw/1/main/inventory.yml
+ssh-keyscan -p 2027 192.168.100.1 >> ~/.ssh/known_hosts
+ssh-keyscan -p 2027 192.168.100.2 >> ~/.ssh/known_hosts
+ssh-keyscan -p 2027 192.168.1.1 >> ~/.ssh/known_hosts
+ssh-keyscan -p 2027 192.168.0.2 >> ~/.ssh/known_hosts
+ssh-keyscan -p 2027 192.168.200.0 >> ~/.ssh/known_hosts
 
 ansible -m ping all
 
